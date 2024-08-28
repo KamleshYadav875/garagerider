@@ -27,12 +27,12 @@ registerButton.addEventListener('click', () =>{
     loginSection.classList.add('close');
 })
 
-loginButton.addEventListener('click', () =>{
+backButton.addEventListener('click', () =>
+{
+    console.log("lkk");
     formContainerSection.classList.remove('active');
     logoSection.classList.remove('active');
     loginSection.classList.remove('close');
-    formContainerSection.classList.add('active');
-    logoSection.classList.add('active');
-    registerSection.classList.add('close');
-
+    registerSection.classList.remove('close');
 })
+
