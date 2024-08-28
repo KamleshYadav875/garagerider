@@ -8,10 +8,24 @@ const registerSection = document.querySelector('.register-section');
 
 const backButton = document.querySelector('.back-button');
 
+
 loginButton.addEventListener('click', () =>{
-    formContainerSection.classList.remove('active');
-    logoSection.classList.remove('active');
-    loginSection.classList.remove('close');
+    if(formContainerSection.classList.contains("active"))
+    {
+        formContainerSection.classList.remove('active');
+    }
+    if(logoSection.classList.contains("active"))
+    {
+        logoSection.classList.remove('active');
+    }
+    if(loginSection.classList.contains("active"))
+    {
+        loginSection.classList.remove('active');
+    }
+    if(loginSection.classList.contains("close"))
+    {
+        loginSection.classList.remove('close');
+    }
     formContainerSection.classList.add('active');
     logoSection.classList.add('active');
     registerSection.classList.add('close');
@@ -19,9 +33,22 @@ loginButton.addEventListener('click', () =>{
 })
 
 registerButton.addEventListener('click', () =>{
-    formContainerSection.classList.remove('active');
-    logoSection.classList.remove('active');
-    registerSection.classList.remove('close');
+    if(formContainerSection.classList.contains("active"))
+    {
+        formContainerSection.classList.remove('active');
+    }
+    if(logoSection.classList.contains("active"))
+    {
+        logoSection.classList.remove('active');
+    }
+    if(registerSection.classList.contains("active"))
+    {
+        registerSection.classList.remove('active');
+    }
+    if(registerSection.classList.contains("close"))
+    {
+        registerSection.classList.remove('close');
+    }
     formContainerSection.classList.add('active');
     logoSection.classList.add('active');
     loginSection.classList.add('close');
@@ -29,10 +56,21 @@ registerButton.addEventListener('click', () =>{
 
 backButton.addEventListener('click', () =>
 {
-    loginSection.classList.remove('close');
-    registerSection.classList.remove('close');
-    formContainerSection.classList.remove('active');
-    logoSection.classList.remove('active');
+    if(formContainerSection.classList.contains('active'))
+    {
+        formContainerSection.classList.remove('active');
+    }
+    if(logoSection.classList.contains("active"))
+    {
+        logoSection.classList.remove('active');
+    }
+    if(registerSection.classList.contains("active"))
+    {
+        registerSection.classList.remove('active');
+    }
+    if(loginSection.classList.contains("active"))
+    {
+        loginSection.classList.remove('.active');
+    }
     
 })
-
