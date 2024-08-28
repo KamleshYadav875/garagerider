@@ -6,6 +6,8 @@ const logoSection = document.querySelector('.logo-section');
 const loginSection = document.querySelector('.login-section');
 const registerSection = document.querySelector('.register-section');
 
+const backButton = document.querySelector('.back-button');
+
 loginButton.addEventListener('click', () =>{
     formContainerSection.classList.remove('active');
     logoSection.classList.remove('active');
@@ -23,4 +25,14 @@ registerButton.addEventListener('click', () =>{
     formContainerSection.classList.add('active');
     logoSection.classList.add('active');
     loginSection.classList.add('close');
+})
+
+loginButton.addEventListener('click', () =>{
+    formContainerSection.classList.remove('active');
+    logoSection.classList.remove('active');
+    loginSection.classList.remove('close');
+    formContainerSection.classList.add('active');
+    logoSection.classList.add('active');
+    registerSection.classList.add('close');
+
 })
