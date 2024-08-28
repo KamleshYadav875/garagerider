@@ -262,14 +262,17 @@ a{
         transition: all 1s linear;
         bottom: -100%;
         width: 100%;
-        display: flex;
+        display: grid;
+        flex-direction: row;
         align-items: center;
         transform:none;
         justify-content: center;
+        top: 100%;
+        left: 0;
     }
     .form-container.active  
     {
-        transition: all 1s ease;
+        transition: all 1s linear;
         display: flex;
         bottom: 0;
         left: 0;
