@@ -29,10 +29,10 @@ registerButton.addEventListener('click', () =>{
 
 backButton.addEventListener('click', () =>
 {
-    console.log("lkk");
-    formContainerSection.classList.remove('active');
-    logoSection.classList.remove('active');
     loginSection.classList.remove('close');
     registerSection.classList.remove('close');
+    formContainerSection.classList.remove('active');
+    logoSection.classList.remove('active');
+    
 })
 
